@@ -29,7 +29,7 @@ There's an existing well-established [library](https://arx.deidentifier.org/over
 The purpose of [encryption](https://en.wikipedia.org/wiki/Encryption) is to ensure data transfer traffic is not susceptible to potential interceptors. Encryption will be used when data is transferred between the 3 different servers, namely front-end, back-end, and database.
 
 Example of encryption:
-![encryption-example](/images/Public_key_encryption_keys.png)
+![encryption-example](/images/public_key_encryption_keys.png)
 
 There is a useful cryptographic class for use in [Java Platform SE 10](https://docs.oracle.com/javase/10/docs/api/javax/crypto/Cipher.html):
 1. Symmetric Key Encryption (AES)
