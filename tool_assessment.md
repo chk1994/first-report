@@ -23,3 +23,16 @@ There are 2 ways to ensure anonymity of data:
 1. [Adding noise to the data](https://link.springer.com/article/10.1186/s40537-017-0110-7). This is implemented by swapping cells within columns and replacing groups of k records with k copies of a single representative.
 
 There's an existing well-established [library](https://arx.deidentifier.org/overview/) available to perform k-anonymity, complete with [examples](https://github.com/arx-deidentifier/arx/tree/master/src/example/org/deidentifier/arx/examples).
+
+## Encryption
+
+The purpose of [encryption](https://en.wikipedia.org/wiki/Encryption) is to ensure data transfer traffic is not susceptible to potential interceptors.
+
+Example of encryption:
+[encryption-example](/images/encryption-example.jpg]
+
+There is a useful cryptographic library for use in [Java Platform SE 7 Crypto Library](https://docs.oracle.com/javase/7/docs/api/javax/crypto/package-summary.html):
+1. Symmetric Key Encryption (AES)
+1. Assymetric Key Encrytion (PKI)
+
+For simplicity and efficient encryption, we can employ the use of AES with a single secrey key for encryption and decryption. The secret key used has to be stored in a safe location to prevent any potential compromise. We propose to lock it in a password-protected .config file that outsiders are unable to access.
