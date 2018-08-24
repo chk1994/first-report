@@ -40,8 +40,8 @@ Advanced Encryption Standard (AES) is a symmetric algorithm (private-key cryptog
 For simplicity and efficient encryption, we can employ the use of AES with a single secret key for encryption and decryption. The secret key used has to be stored in a safe location to prevent any potential compromise. We propose to lock it in a password protected .config file that outsiders are unable to access.
 
 Possible library alternatives:
-[PHP](http://php.net/manual/en/refs.crypto.php)
-[Python](https://docs.python.org/3/library/crypto.html)
-[Perl](https://perldoc.perl.org/functions/crypt.html)
+1. [PHP](http://php.net/manual/en/refs.crypto.php)
+1. [Python](https://docs.python.org/3/library/crypto.html)
+1. [Perl](https://perldoc.perl.org/functions/crypt.html)
 
-[Example](https://aesencryption.net/).
+AES [example](https://aesencryption.net/).
