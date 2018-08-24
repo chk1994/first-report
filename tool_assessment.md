@@ -37,4 +37,9 @@ There is a useful cryptographic class for use in [Java Platform SE 10](https://d
 
 For simplicity and efficient encryption, we can employ the use of AES with a single secret key for encryption and decryption. The secret key used has to be stored in a safe location to prevent any potential compromise. We propose to lock it in a password protected .config file that outsiders are unable to access.
 
-There are also alternatives to employ AES besides using Java. A possible alternative is the use of PHP which may potentially help with linking to our front-end server. An example is shown [here](https://aesencryption.net/).
+Possible library alternatives:
+[PHP](http://php.net/manual/en/refs.crypto.php)
+[Python](https://docs.python.org/3/library/crypto.html)
+[Perl](https://perldoc.perl.org/functions/crypt.html)
+
+[Example](https://aesencryption.net/).
