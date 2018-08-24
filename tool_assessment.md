@@ -29,7 +29,7 @@ There's an existing well-established [library](https://arx.deidentifier.org/over
 The purpose of [encryption](https://en.wikipedia.org/wiki/Encryption) is to ensure data transfer traffic is not susceptible to potential interceptors.
 
 Example of encryption:
-![encryption-example](/images/Public_key_encryption_keys.png):
+![encryption-example](/images/Public_key_encryption_keys.png)
 
 There is a useful cryptographic library for use in [Java Platform SE 7 Crypto Library](https://docs.oracle.com/javase/7/docs/api/javax/crypto/package-summary.html):
 1. Symmetric Key Encryption (AES)
