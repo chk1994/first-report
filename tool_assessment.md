@@ -31,7 +31,7 @@ The purpose of [encryption](https://en.wikipedia.org/wiki/Encryption) is to ensu
 Example of encryption:
 ![encryption-example](/images/Public_key_encryption_keys.png)
 
-There is a useful cryptographic library for use in [Java Platform SE 7 Crypto Library](https://docs.oracle.com/javase/7/docs/api/javax/crypto/package-summary.html):
+There is a useful cryptographic class for use in [Java Platform SE 10](https://docs.oracle.com/javase/10/docs/api/javax/crypto/Cipher.html):
 1. Symmetric Key Encryption (AES)
 1. Assymetric Key Encrytion (PKI)
 
