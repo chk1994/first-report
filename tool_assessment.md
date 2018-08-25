@@ -45,3 +45,7 @@ Possible library alternatives:
 1. [Perl](https://perldoc.perl.org/functions/crypt.html)
 
 AES [example](https://aesencryption.net/).
+
+## Source Code Control & Issue Management
+
+Our project uses [GitHub](https://github.com/IFS4205-2018-Sem1-Team1) for source code control and issue management. Reports will be written in .md (instead of .doc) to allow for version control of reports as well.
