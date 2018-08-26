@@ -54,4 +54,14 @@ AES [example](https://aesencryption.net/).
 
 Our project uses [GitHub](https://github.com/IFS4205-2018-Sem1-Team1) for source code control and issue management. Reports will be written in .md (instead of .doc) to allow for version control of reports as well.
 
+## DevOps Tools
+
+Our project will use [Ansible](https://www.ansible.com/) to ensure that our remote servers are all set up with the same configuration. 
+
+## Security Tools
+
+Our project will use [Metaspolit](https://www.metasploit.com/) and [Arachni](http://www.arachni-scanner.com/) to scan our web application, as well as [phpcs-security-audit](https://github.com/FloeDesignTechnologies/phpcs-security-audit) to scan our PHP code for vulnerabilities. We would also use [Synk](https://github.com/Snyk/) to integrate easily with our Github repo find & fix known vulnerabilities in open-source dependencies.  We can also consider using [BDD-Security](https://www.continuumsecurity.net/bdd-security/) to launch automated scans with specific scenarios/ claims we want to keep. 
+
+
+
 
