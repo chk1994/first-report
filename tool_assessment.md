@@ -37,9 +37,9 @@ Example of encryption:
 
 There is a useful cryptographic class for use in [Java Platform SE 10](https://docs.oracle.com/javase/10/docs/api/javax/crypto/Cipher.html):
 1. Symmetric Key Encryption (AES)
-1. Assymetric Key Encrytion (PKI)
+1. Assymetric Key Encrytion (RSA)
 
-Advanced Encryption Standard (AES) is a symmetric algorithm (private-key cryptography). This involves a single key which is a shared secret between the sender and recipient. The same key is being used for both encryption and decryption. Public-key cryptography (PKI), a asymmetric algorithm, involves two related keys for each recipient involved - a private key which is a secret known only by the recipient, and a related public key which is known by all senders. The sender encrypts the message using the recipient's public key. That message can only be decrypted by a recipient with a private key matching the public key.
+Advanced Encryption Standard (AES) is a symmetric algorithm (private-key cryptography). This involves a single key which is a shared secret between the sender and recipient. The same key is being used for both encryption and decryption. Public-key cryptography (PKI), a asymmetric algorithm, involves two related keys for each recipient involved - a private key which is a secret known only by the recipient, and a related public key which is known by all senders. The sender encrypts the message using the recipient's public key. That message can only be decrypted by a recipient with a private key matching the public key. We will be using RSA for our assymetric algorithm.
 
 For simplicity and efficient encryption, we can employ the use of AES with a single secret key for encryption and decryption. The secret key used has to be stored in a safe location to prevent any potential compromise. We propose to lock it in a password protected .config file that outsiders are unable to access.
 
@@ -53,3 +53,5 @@ AES [example](https://aesencryption.net/).
 ## Source Code Control & Issue Management
 
 Our project uses [GitHub](https://github.com/IFS4205-2018-Sem1-Team1) for source code control and issue management. Reports will be written in .md (instead of .doc) to allow for version control of reports as well.
+
+
