@@ -69,7 +69,17 @@ AES [example](https://aesencryption.net/).
 
 ## Source Code Control & Issue Management
 
-Our project uses [GitHub](https://github.com/IFS4205-2018-Sem1-Team1) for source code control and issue management. Reports will be written in .md (instead of .doc) to allow for version control of reports as well.
+Our project uses [GitHub](https://github.com/IFS4205-2018-Sem1-Team1) for source code control and issue management for the following reasons:
+1. It's a good tool for project management.
+1. Most of the team are familiar and comfortable with using GitHub. This is not the case for the alternatives.
+
+There are other alternatives such as:
+1. Bitbucket. It allows free hosting of private repositories. However, the free version only allows for up to 5 users per repository. As our team has 6 members, we are not able to use the free version. Furthermore, there is no requirement for us to host our code on private repositories.
+1. GitLab. GitLab has inbuilt CI/CD. This means that we do not have to manually integrate external CI/CD such as Travis to our repositories. This is a plus point, though, not a very big one since it's easy to perform manual integration of external CI/CD. 
+Also, GitLab is lacking some features compared to GitHub such as having only a single assignee for issues. Since some issues may be quite hard to resolve, we may need to use GitHub's feature of having multiple assignees for issues. 
+Therefore, there's no compelling reason for us to use GitLab over GitHub.
+
+Reports will be written in .md (instead of .doc) to allow for version control of reports as well.
 
 ## DevOps Tools
 
