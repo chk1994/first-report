@@ -2,20 +2,19 @@
 
 ## Application Integration
 
-Our project uses Representational State Transfer (REST) API for communication between the client and the server. Using REST for development allows for Separation of Concerns, where the client-side code will not concern itself with writing SQL statements or the logic for accessing the database. Rather, it will only largely concern itself with the View. Furthermore, by having Separation of Concerns: 
-1. Development of user interface, the server and the data storage can be performed independently as they are loosely coupled to each other
-1. Debugging and spotting security flaws in our project becomes easier
+To send data over HTTP (i.e. communication between the client and the server), we can use either GraphQL or REST. Using either GraphQL or REST for development allows for Separation of Concerns, where the client-side code will not concern itself with writing SQL statements or the logic for accessing the database. Rather, it will only largely concern itself with the View. Furthermore, by having Separation of Concerns: 
+1. Development of user interface, the server and the data storage can be performed independently as they are loosely coupled to each other.
+1. Debugging and spotting security flaws in our project becomes easier.
 
-Our project uses [Spring framework](https://spring.io/) to create a secure and [RESTful web service](https://spring.io/guides/gs/serving-web-content/). Security is enforced through:
-1. [Authentication for Web Application](https://spring.io/guides/gs/securing-web/)
-1. [Roles & Privileges](https://www.baeldung.com/role-and-privilege-for-spring-security-registration)
-1. [Method Security](https://www.baeldung.com/spring-security-method-security)
+We have decided to use GraphQL over REST as REST faces the following issues:
+1. Overfetching: Client downloads more information than is required.
+1. Underfetching: A specific endpoint doesn’t provide enough required information. This means that the client has to make multiple API calls through various endpoints to retrieve the required information.
+1. Slowing development: As we aren't clear about the requirements / data to be displayed to the various users, we may need many iterations of user testing to verify that the data displayed to each user is sufficient. By using REST, apart from changing the UI, the backend also needs to be updated to return the correct data. This is not the case for GraphQL.
+1. Harder to pick up: [Good API](https://blog.goodapi.co/rest-vs-graphql-a-critical-review-5f77392658e7) commented that "when time is the essence... when only one client that you control consumes your API, when you can’t afford to study REST or to learn HTTP in-depth or when you can’t hire someone with the expertise to help you, GraphQL might be the better way to go" simply because "True REST APIs are incredibly hard to pull off."
 
-Spring only allows us to easily [connect and perform operations to a MySQL database](https://spring.io/guides/gs/accessing-data-mysql/).
-
-Spring is also well-established and there are multiple useful guides for us to follow such as [developing an application using Spring from scratch](https://spring.io/guides/tutorials/bookmarks/).
-
-Since Spring only works on Java platform, Java will be used for server side development.
+Our project uses [Spring framework](https://spring.io/) to create a web service using [GraphQL](https://www.baeldung.com/spring-graphql):
+1. Spring allows us to easily [connect and perform operations to a MySQL database](https://dev.to/sambenskin/howto-integrate-a-mysql-database-into-your-java-spring-boot-graphql-service-26c).
+1. Spring works on Java platform, and most of us are familiar with Java.
 
 ## Anonymising Data
 
