@@ -33,11 +33,11 @@ There are 3 ways to ensure anonymity of data:
     
     An example of pre-anonymised data:
     
-    ![pre-anonymised data](/images/pre_anonymisation.png)
+    ![pre-anonymised data](https://github.com/IFS4205-2018-Sem1-Team1/first-report/raw/master/images/pre_anonymisation.png)
     
     After applying 2-anonymity to the data. Notice that this data has 2-anonymity with respect to the attributes "Age" and "Gender", but not for the attribute "Disease":
     
-    ![post-anonymised data](/images/post_anonymisation.png)
+    ![post-anonymised data](https://github.com/IFS4205-2018-Sem1-Team1/first-report/raw/master/images/post_anonymisation.png)
 
 1. [Adding noise to the data](https://link.springer.com/article/10.1186/s40537-017-0110-7). This can be implemented by swapping cells within columns.
 
@@ -50,7 +50,7 @@ Since anonymising data is not the key focus of the project, we decided not to sp
 The purpose of [encryption](https://en.wikipedia.org/wiki/Encryption) is to ensure data transfer traffic is not susceptible to potential interceptors. Encryption will be used when data is transferred between the 3 different servers, namely front-end, back-end, and database.
 
 Example of encryption:
-![encryption-example](/images/public_key_encryption_keys.png)
+![encryption-example](https://github.com/IFS4205-2018-Sem1-Team1/first-report/raw/master/images/public_key_encryption_keys.png)
 
 There is a useful cryptographic class for use in [Java Platform SE 10](https://docs.oracle.com/javase/10/docs/api/javax/crypto/Cipher.html):
 1. Symmetric Key Encryption (AES)
