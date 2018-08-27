@@ -6,11 +6,14 @@ Our project uses Representational State Transfer (REST) API for communication be
 1. Development of user interface, the server and the data storage can be performed independently as they are loosely coupled to each other
 1. Debugging and spotting security flaws in our project becomes easier
 
-Our project uses [Spring framework](https://spring.io/) to create a RESTful web service. There are official guides on using this framework:
-1. [Performing Create, Read, Update, Delete (CRUD) with MySQL](https://spring.io/guides/gs/accessing-data-mysql/) and [here](https://dzone.com/articles/spring-boot-jpa-mysql-sample-app-code-example)
-1. [Securing a Web Application](https://spring.io/guides/gs/securing-web/) with Role-based Access Control
-1. [Using REST API to serve content](https://spring.io/guides/gs/serving-web-content/)
-1. [Developing an application using Spring from scratch](https://spring.io/guides/tutorials/bookmarks/)
+Our project uses [Spring framework](https://spring.io/) to create a secure and [RESTful web service](https://spring.io/guides/gs/serving-web-content/). Security is enforced through:
+1. [Authentication for Web Application](https://spring.io/guides/gs/securing-web/)
+1. [Roles & Privileges](https://www.baeldung.com/role-and-privilege-for-spring-security-registration)
+1. [Method Security](https://www.baeldung.com/spring-security-method-security)
+
+Spring only allows us to easily [connect and perform operations to a MySQL database](https://spring.io/guides/gs/accessing-data-mysql/).
+
+Spring is also well-established and there are multiple useful guides for us to follow such as [developing an application using Spring from scratch](https://spring.io/guides/tutorials/bookmarks/).
 
 Since Spring only works on Java platform, Java will be used for server side development.
 
