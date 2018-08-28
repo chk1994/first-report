@@ -62,6 +62,8 @@ The following diagram shows how a JWT is obtained and used to access APIs or res
 
 ![jwt_example](https://github.com/IFS4205-2018-Sem1-Team1/first-report/raw/master/images/jwt_example.png)
 
+A justification for the use of JWT is because it comes with a huge [library](https://jwt.io/#libraries) supported for many different programming languages.
+
 When we use Apache Shiro to implement the login system, a JWT information is returned to the front-end, and it stores the token information in the request header when it interacts with the back-end server. We will then configure a custom interceptor to intercept all URL requests, retrieve the token information in the request header information, and verify the token information. If the token information generated during the login is correct, the user is logged in. Otherwise, we will reject the request and return a 401 error.
 
 ## Source Code Control & Issue Management
