@@ -46,7 +46,7 @@ There are 3 ways to ensure anonymity of data:
 Since anonymising data is not the key focus of the project, we decided not to spend implement the algorithms if possible. Out of the 3 methods, only k-anonymity has an existing well-established [library](https://arx.deidentifier.org/overview/), complete with [examples](https://github.com/arx-deidentifier/arx/tree/master/src/example/org/deidentifier/arx/examples). Therefore, we've decided to use k-anonymity.
 
 ## Secure Data Transfer
-We intend to have a web application in which [authorization](https://en.wikipedia.org/wiki/Authorization) is handled by [Apache Shiro](https://shiro.apache.org/) and [authentication](https://en.wikipedia.org/wiki/Authentication) by [JSON Web Token (JWT)](https://jwt.io/).
+We intend to have a web application in which [authorization](https://en.wikipedia.org/wiki/Authorization) is handled by [Apache Shiro](https://shiro.apache.org/) and [authentication](https://en.wikipedia.org/wiki/Authentication) by [JSON Web Token (JWT)](https://jwt.io/). This would ensure secure data transfer when a user logs in with his/her own credentials.
 
 Apache Shiro is a powerful and easy to use Java security framework that offers developers an intuitive yet comprehensive solution to:
 1. Authentication
