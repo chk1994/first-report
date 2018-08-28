@@ -82,7 +82,7 @@ Reports will be written in .md (instead of .doc) to allow for version control of
 
 ## DevOps Tools
 
-Our project will use [Ansible](https://www.ansible.com/) to ensure that our remote servers are all set up with the same configuration.  [This doc](https://docs.ansible.com/ansible/2.5/user_guide/intro_getting_started.html) will help us with setting up. 
+Our project will use [Ansible](https://www.ansible.com/) as our configuration management tool to ensure that our remote servers are set up properly and simply.  [This doc](https://docs.ansible.com/ansible/2.5/user_guide/intro_getting_started.html) will help us with setting up. A configuration management tool is great for our project as we are managing 3 remote servers with different functionalities, most likely serving their roles as a web server, an application server and a database server. The most popular configuration management tools out there are Ansible, Salt, Puppet, and Chef. Puppet and Chef are pull-based configuration management tools so that means that they pull all the configurations from a central server, which will not serve our needs. They also constrict users to using Ruby. Ansible and Salt, on the other hand, are push-based configuration tools which means users can directly push their configurations onto their node machines. We chose Ansible over Salt as Ansible has excellent security using SSH. It also has a less steep learning curve than Salt.  
 
 ## Security Tools
 
