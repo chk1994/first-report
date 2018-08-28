@@ -19,19 +19,19 @@ Since Spring only works on Java platform, Java will be used for server side deve
 
 ## Anonymising Data
 
-The purpose of [anonymising](http://kau.diva-portal.org/smash/get/diva2:1043735/FULLTEXT01.pdf) data is to make it impossible to:
+[Anonymising](http://kau.diva-portal.org/smash/get/diva2:1043735/FULLTEXT01.pdf) data makes it impossible to:
 1. Single out an individual in the dataset. 
 1. Link records concerning the same individual.
 1. Infer the value of one attribute based on other values.
 
 This allows for researchers to retrieve data for research purposes without violating privacy concerns.
 
-There are 3 ways to ensure anonymity of data:
-1. [k-anonymity](https://en.wikipedia.org/wiki/K-anonymity). This is implemented by:
-    1. Suppression. For instance, all or some values of a particular column may be omitted through replacing it with a "\*".
-    1. Generalisation. For instance, the medical condition can be replaced by a more general term (e.g., “Cardiovascular disease” replaced by “Heart-related”).
+There are 3 ways to ensure data anonymity:
+1. [k-anonymity](https://en.wikipedia.org/wiki/K-anonymity), where at least k individuals in the dataset share the same set of attributes. This is implemented by:
+    1. Suppression. For instance, all or some values of a particular column may be omitted through replacing them with "\*".
+    1. Generalisation. For instance, the medical condition can be replaced with a more general term (e.g., “Cardiovascular disease” replaced with “Heart-related”).
     
-    An example of pre-anonymised data:
+    Example of pre-anonymised data:
     
     ![pre-anonymised data](https://github.com/IFS4205-2018-Sem1-Team1/first-report/raw/master/images/pre_anonymisation.png)
     
@@ -41,9 +41,9 @@ There are 3 ways to ensure anonymity of data:
 
 1. [Adding noise to the data](https://link.springer.com/article/10.1186/s40537-017-0110-7). This can be implemented by swapping cells within columns.
 
-1. Generating fake data. The fake data must be a good representation of the actual data.
+1. Generating fake data, where the fake data must be a good representation of the actual data.
 
-Since anonymising data is not the key focus of the project, we decided not to spend implement the algorithms if possible. Out of the 3 methods, only k-anonymity has an existing well-established [library](https://arx.deidentifier.org/overview/), complete with [examples](https://github.com/arx-deidentifier/arx/tree/master/src/example/org/deidentifier/arx/examples). Therefore, we've decided to use k-anonymity.
+Since anonymising data is not the key focus of the project, we decided not to spend time to implement the algorithms if possible. Out of the 3 methods discussed above, only k-anonymity has an existing well-established [library](https://arx.deidentifier.org/overview/), complete with [examples](https://github.com/arx-deidentifier/arx/tree/master/src/example/org/deidentifier/arx/examples). Therefore, k-anonymity will be used to ensure data anonymity.
 
 ## Encryption
 
@@ -69,14 +69,13 @@ AES [example](https://aesencryption.net/).
 
 ## Source Code Control & Issue Management
 
-Our project uses [GitHub](https://github.com/IFS4205-2018-Sem1-Team1) for source code control and issue management for the following reasons:
-1. It's a good tool for project management.
-1. Most of the team are familiar and comfortable with using GitHub. This is not the case for the alternatives.
+Our project uses [GitHub](https://github.com/IFS4205-2018-Sem1-Team1) for source code control and issue management because most of the team are familiar and comfortable with using GitHub. This is not the case for the alternatives.
 
 There are other alternatives such as:
-1. Bitbucket. It allows free hosting of private repositories. However, the free version only allows for up to 5 users per repository. As our team has 6 members, we are not able to use the free version. Furthermore, there is no requirement for us to host our code on private repositories.
-1. GitLab. GitLab has inbuilt CI/CD. This means that we do not have to manually integrate external CI/CD such as Travis to our repositories. This is a plus point, though, not a very big one since it's easy to perform manual integration of external CI/CD. 
-Also, GitLab is lacking some features compared to GitHub such as having only a single assignee for issues. Since some issues may be quite hard to resolve, we may need to use GitHub's feature of having multiple assignees for issues. 
+1. Bitbucket. It allows free hosting of private repositories. However, the free version only allows for up to 5 users per repository. As our team has 6 members, we are not able to use the free version. Furthermore, there is no requirement to host our code on private repositories. 
+Therefore, there's no compelling reason for us to use Bitbucket over GitHub.
+1. GitLab. GitLab has inbuilt CI/CD, which means that we do not have to manually integrate external CI/CD tools to our repositories. This is a plus point, though, not a very big one since it's easy to manually integrate external CI/CD tools. 
+However, GitLab is lacking some features compared to GitHub. For example, an issue can only be assigned to a single developer. There may be occasions when we need to assign multiple developers to resolve a certain issue, perhaps because that issue is hard. 
 Therefore, there's no compelling reason for us to use GitLab over GitHub.
 
 Reports will be written in .md (instead of .doc) to allow for version control of reports as well.
