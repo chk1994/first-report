@@ -66,6 +66,8 @@ A justification for the use of JWT is because it comes with a huge [library](htt
 
 When we use Apache Shiro to implement the login system, a JWT information is returned to the front-end, and it stores the token information in the request header when it interacts with the back-end server. We will then configure a custom interceptor to intercept all URL requests, retrieve the token information in the request header information, and verify the token information. If the token information generated during the login is correct, the user is logged in. Otherwise, we will reject the request and return a 401 error.
 
+An alternative to Apache Shiro is [Spring Security](https://spring.io/projects/spring-security). While it is not dependent on running in a Servlet/JSP environment, it is heavily biased towards web applications in terms of ease of developer use.  Apache Shiro and Spring Security differ mainly on scope and mental model/design. Apache Shiro has a broader scope than Spring Security as it also addresses problems associated with enterprise session management as well as cryptography, concurrency, etc. Shiro also has one 'killer feature' that people generally reference a lot: built-in support for very fine-grained (e.g. instance-level) access control. 
+
 ## Source Code Control & Issue Management
 
 Our project uses [GitHub](https://github.com/IFS4205-2018-Sem1-Team1) for source code control and issue management for the following reasons:
